@@ -1,0 +1,117 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+header, footer, nav, section, aside, menu,
+audio, video, details, article,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+/* помните об определении стиля focus! */
+:focus {
+  outline: 0; }
+
+body {
+  line-height: 1;
+  color: black;
+  background: white; }
+
+ol, ul {
+  list-style: none; }
+
+/* для таблиц надо устанавливать в разметке 'cellspacing="0"' */
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: ""; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+body {
+  min-width: 830px;
+  font-size: 18px;
+  background-color: #fff;
+  color: #000; }
+
+.container {
+  margin: 0 auto;
+  width: 800px;
+  position: relative;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .container::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: auto;
+    clear: both; }
+
+header {
+  padding: 10px 0; }
+  header h1 {
+    background-color: #A52A2A;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 40px;
+    font-weight: bold; }
+
+main figure {
+  text-align: center;
+  margin: 15px 0 0; }
+
+main article {
+  margin: 20px 0; }
+  main article h6 {
+    text-align: justify;
+    line-height: 24px;
+    margin: 10px 0; }
+  main article strong {
+    font-weight: bold; }
+  main article i {
+    font-style: italic; }
+    main article i a {
+      font-weight: bold; }
+  main article a {
+    color: #0000FF;
+    text-decoration: none; }
+    main article a:hover {
+      text-decoration: underline; }
+
+main .gallery {
+  text-align: center;
+  margin: 10px 0; }
+  main .gallery img {
+    display: inline-block;
+    margin: 0 5px;
+    border: 3px dashed #000; }
+
+footer {
+  font-size: 20px;
+  padding: 20px 0 0; }
+  footer p {
+    padding: 10px 0;
+    background-color: #000;
+    text-align: center;
+    color: #fff; }
